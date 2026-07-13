@@ -1,0 +1,87 @@
+/* Center everything on the screen vertically and horizontally */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Horizontal alignment container for input + radio buttons */
+.login-container {
+    display: flex;
+    align-items: flex-end; /* Aligns the bottom edges together */
+    gap: 30px;             /* Spacing between the text input and room options */
+    margin-bottom: 25px;
+}
+
+/* Left side alignment rules */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+/* Plain styled text entry field with a solid black border */
+input[type="text"] {
+    width: 260px;
+    height: 30px;
+    border: 2px solid #000000;
+    font-size: 18px;
+    padding: 2px 5px;
+}
+
+/* Right side room layout stack */
+.room-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Spacing between each option row */
+    text-align: left;
+}
+
+/* Individual layout rows for the radios */
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Force standard circular buttons layout */
+.radio-option input[type="radio"] {
+    transform: scale(1.3); /* Slightly larger for easier clicking */
+    cursor: pointer;
+}
+
+/* Yellow Retro Next Button styling rules */
+#next-btn {
+    background-color: #FFCC00; /* Solid classic yellow */
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px 50px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0px #000000; /* Subtle hard shadow feel */
+}
+
+#next-btn:hover {
+    background-color: #E6B800; /* Darkens slightly on hover */
+}
